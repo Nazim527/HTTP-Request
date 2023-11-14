@@ -176,7 +176,6 @@ function editItem(item) {
            const itemID = edit.parentElement.parentElement.dataset.id;
             
            editForm.addEventListener("submit", (e) => {
-                e.preventDefault()
 
                 let editDate = new Date()
                 let nowEditDate = (editDate.getDay() - 1) + "/" + (1 + editDate.getMonth()) + "/" + editDate.getFullYear()
