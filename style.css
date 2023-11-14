@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@400;700&family=Rubik:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    transition: all .3s ease;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.header {
+    background: var(--base-background-white, #FFF);
+    box-shadow: 0px -1px 0px 0px #F1F1F1;
+    width: 100%;
+    padding: 20px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h4 {
+    font-size: 24px;
+    color:  #242D35;
+}
+
+.header button {
+    padding: 12px 20px;
+    background:  #4040F2;
+    color: #FFF;
+    border-radius: 32px;
+    font-weight: 700;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.box .box_footer .like svg path{
+    fill: red;
+}
+.box .box_footer .like img {
+    fill: red;
+}
+
+.content {
+    width: 100%;
+    background-color: #FAFAFA;
+    
+    display: flex;
+    gap: 72px;
+    flex-wrap: wrap;
+}
+
+.content .box {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    width: 414px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 45px;
+}
+
+.box .box_header h6 {
+    font-size: 18px;
+}
+.box .box_header .date {
+    font-size: 17px;
+    color: #585C60;
+}
+
+.box .box_text {
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+    width: 100%;
+    font-size: 17px;
+}
+
+.box_text p {
+    overflow-y: hidden;
+    height: 63px;
+}
+
+.box_text.full-height p {
+    overflow-y: auto;
+    height: auto;
+}
+
+.content .box .box_footer {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.box .box_footer .like.active {
+    color: red;
+}
+
+.box_footer  .footer_icon {
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+
+}
+
+
+/*? Modull */
+   .modul,
+   .modul_edit {
+    display: none;
+    position: fixed;
+    background-color: #FFF;
+    width: 690px;
+    border: 1px solid black;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11111;
+
+    padding: 82px 40px 11px 40px;
+}
+
+
+.modul h3,
+.modul_edit h3 {
+    font-size: 20px;
+}
+.modul form,
+.modul_edit form {
+width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.modul input,
+.modul_edit input {
+    border-bottom: 1px solid #9492A0;
+    padding: 12px 0;
+    font-size: 15px;
+}
+
+.modul p,
+.modul_edit p {
+    font-size: 14px;
+    color: #9492A0;
+}
+
+.modul textarea
+,.modul_edit textarea {
+    font-family: sans-serif;
+    resize: none;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #9492A0;
+}
+
+.modul .btns,
+.modul_edit .btns {
+    margin-top: 16px;
+    
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+}
+
+.btns button {
+    border-radius: 4px;
+    cursor: pointer;
+    color: #FFF;
+    padding: 8px;
+}
+.btns .cancel {
+    background-color: #383748;
+}
+.btns .save {
+    background-color: #2669FF;
+}

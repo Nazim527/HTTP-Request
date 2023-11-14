@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h4>Blogs</h4>
+            <button id="create_btn"><p>Create Post</p><ion-icon name="add"></ion-icon></button>
+        </div>
+        <div class="content">
+        </div>
+    </div>
+    <!-- ? Modul content create -->
+    <div class="modul">
+        <h3 >Add Post</h3>
+        <form>
+            <input type="text" id="input_title" placeholder="Enter Title">
+            <p>Write Your Post</p>
+            <textarea  id="input_message" cols="30" rows="10"></textarea>
+            
+            <div class="btns">
+                <button type="button" class="cancel">Cancel</button>
+                <button type="submit" class="save">Save</button>
+            </div>
+        </form>
+    </div>
+
+    <!--? modul edit -->
+    <div class="modul_edit">
+        <h3>Edit Post</h3>
+        <form>
+            <input type="text" id="input_title" placeholder="Enter Title">
+            <p>Write Your Post</p>
+            <textarea  id="input_message" cols="30" rows="10"></textarea>
+            
+            <div class="btns">
+                <button type="button" class="cancel">Cancel</button>
+                <button type="submit" class="save">Save</button>
+            </div>
+        </form>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
