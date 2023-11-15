@@ -1,18 +1,11 @@
 {
   "posts": [
     {
-      "id": 32,
-      "title": "dsa",
-      "message": "dasdas",
+      "id": 70,
+      "title": "AAAAA",
+      "message": "DSAASDSA",
       "isLiked": false,
-      "date": "1/11/2023"
-    },
-    {
-      "id": 14,
-      "title": "dsa",
-      "message": "das",
-      "isLiked": true,
-      "date": "1/11/2023"
+      "date": "2/11/2023"
     }
   ]
 }

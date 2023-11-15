@@ -197,8 +197,9 @@ function deleteItem(itemsDelet) {
             const confirmDelete = confirm("Are you sure you want to delete?")
             if(confirmDelete) {
                 const deletItemId = itemDelet.parentElement.parentElement.dataset.id
-
+                
                 deleteData(deletItemId)
+                window.location.reload()
             } 
         })
     })
