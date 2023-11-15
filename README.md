@@ -1,36 +1,13 @@
 # Http-request 🌎🛜
-
-Json server vasitəsi ilə posts adlı resurs yaradın. Daxili aşağıdakı struktur kimi olmalıdır:
-
-```
-{
-  "posts": [
-       { 
-	      id: "1"
-        title: "Today’s Weather",
-        message: "Hello, I am looking for a new career opportunity and would appreciate your support.",
-        isLiked: true,
-	      date: 12/04/23
-       },
-       { 
-	     id: "2"
-        title: "My Health Condition",
-        message: "Hello, I am looking for a new career opportunity and would appreciate your support.",
-        isLiked: false,
-	      date: 12/04/23
-       },
-     ]
-}
-```
-
-## Tasks
-1. Bütün postları ekranda figmadakı şəkildə göstərin. Bunun üçün `get` request etmək lazımdır
-2. Daxilində Title, Message inputları olan modal yaradın və ekranda create post buttonuna klik etdikdə, həmin modal istifadəçiyə görsənsin.
-3. İnputlar doldurulduqdan sonra, `post request` göndərilsin və yeni məhsul fake databasaya əlavə olunsun
-4. Post cartının daxilində Edit və Delete və Like buttonları yaradın.
-5. Edit buttonuna klik etdikdə, həmin postun bütün datalarının qeyd olunduğu modal ekrana gəlməlidir. Və həmin inputlarda hansısa hissəni dəyişdikdə, `patch request` göndərilməli, və məhsul update olunmaldır.
-6. Delete buttonuna klik etdikdə, klik olunan məhsul silinsin.
-7. Like butonuna basdıqda like butonu və like yazısı qırmızı rəng olmalıdır və 2ci dəfə basdıqda yenidən əvvəlki hala qayıtmalıdır.
-8. Postu create etdikdə postun yaradıldığı vaxt cart da qeyd olunmalıdır.
-
-Figma: <a href="https://www.figma.com/file/W4Vm3cRd2ayWuSIYpCh9wm/Untitled?type=design&node-id=0%3A1&t=w3BCICoLbNPnILc8-1">link</a>
+# This project contains a simple post management application using JSON-Server. Below you can find the basic steps and features of the application.
+## Features
+- #### When the "Create Post" button is clicked, a modal is displayed to the user containing Title and Message inputs. After filling out the inputs, a post request is sent to add a new item to the fake database.
+- #### Each post card includes "Edit," "Delete," and "Like" buttons, and each works according to its own functionality.
+- #### When a new post is created, the timestamp of this event is displayed on the post card.
+------
+Live Demo: https://htps-request.netlify.app
+----
+P.S: If you'd like to check out the demo, after cloning the repository to your computer, you can smoothly use it by running the command 'json-server --watch db.json' once the deployment issues are resolved. 
+Thank you for your understanding😊.
+------
+![Ekran görüntüsü 2023-11-15 132201](https://github.com/Nazim527/HTTP-Request/assets/68445690/c2fae2aa-4a2d-4bf8-bcc2-b63f91d4fa26)
