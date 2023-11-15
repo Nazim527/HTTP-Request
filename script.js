@@ -218,13 +218,14 @@ function likeItemChange(likeItems) {
                     isLiked: true
                 }
                 likeData(objLike, likeBtnId)
-                window.location.reload()
             } else {
                 let objLike = {
                     isLiked: false
                 }
                 likeData(objLike, likeBtnId)
             }
+
+            window.location.reload()
         })
     })
 }
